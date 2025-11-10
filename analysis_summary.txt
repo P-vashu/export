@@ -1,0 +1,42 @@
+CRYPTOCURRENCY MARKET ANALYSIS - SUMMARY REPORT
+================================================================================
+
+1. DATA PREPARATION:
+   - Bitcoin records: 273
+   - BinanceCoin records: 273
+   - Aave records: 273
+   - Date range: 2020-10-05 to 2021-07-06
+
+2. SEASONAL DECOMPOSITION (Bitcoin):
+   - Mean of trend component: 36378.1594
+   - Std dev of residual component: 0.0641
+
+3. PRINCIPAL COMPONENT ANALYSIS:
+   - Explained variance ratio (PC1): 0.9535
+   - Cumulative variance (PC1-PC3): 0.9998
+
+4. GRANGER CAUSALITY TEST (Bitcoin -> BinanceCoin):
+   - F-statistic: 1.501
+   - P-value: 0.189942
+
+5. AUGMENTED DICKEY-FULLER TEST (Aave):
+   - Test statistic: -1.5020
+   - P-value: 0.532536
+
+6. CROSS-CORRELATION ANALYSIS:
+   - Maximum absolute correlation: 0.5635
+   - Corresponding lag: 0
+
+7. GENERALIZED PARETO DISTRIBUTION (Bitcoin Volume):
+   - Shape parameter: 0.6827
+   - Scale parameter: 12232871190.0979
+
+8. QUANTILE REGRESSION (BinanceCoin):
+   - Slope coefficient at 0.50 quantile: 0.00000 (6.90006222e-08)
+
+9. SPECTRAL ANALYSIS (Aave):
+   - Frequency with highest PSD: 0.003663 cycles/day
+   - Periodicity: 273.00 days
+
+10. HEXBIN PLOT:
+    - Generated: hexbin_btc_bnb_returns.png
