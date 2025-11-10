@@ -1,0 +1,47 @@
+================================================================================
+CRYPTOCURRENCY VOLATILITY ANALYSIS - KEY METRICS SUMMARY
+================================================================================
+
+Analysis Period: October 5, 2020 - July 6, 2021
+Datasets: Bitcoin, BinanceCoin, Aave
+
+================================================================================
+REQUESTED METRICS
+================================================================================
+
+1. SEASONAL DECOMPOSITION (Bitcoin Close, Multiplicative, Period=30)
+   - Trend Component Mean:                    36378.1594
+   - Residual Component Std Dev:                  0.0641
+
+2. PCA ANALYSIS (Concatenated Z-score Normalized Data)
+   - PC1 Explained Variance Ratio:                0.9535
+   - Cumulative Variance (PC1-PC3):               0.9998
+
+3. GRANGER CAUSALITY TEST (Bitcoin vs BinanceCoin, Lag=5, SSR F-test)
+   - F-statistic:                                  1.366
+   - P-value:                                   0.237350
+
+4. GENERALIZED PARETO DISTRIBUTION (Bitcoin Volume, 95th Percentile)
+   - Shape Parameter:                             0.6827
+   - Scale Parameter:                  12232871190.0979
+
+5. QUANTILE REGRESSION (BinanceCoin: Volume → Close)
+   - Slope Coefficient at 0.50 Quantile:        0.00000
+
+   Note: The actual value is 6.9001e-08, which rounds to 0.00000
+   when expressed to 5 decimal places. This indicates an extremely
+   weak relationship between Volume and Close price.
+
+6. SPECTRAL ANALYSIS (Aave Close Prices)
+   - Frequency with Highest PSD:              0.003663 cycles/day
+   - Periodicity:                               273.00 days
+
+================================================================================
+VISUALIZATION
+================================================================================
+
+Hexbin Plot: hexbin_bitcoin_binancecoin_returns.png
+  - Bitcoin Daily_Return (x-axis) vs BinanceCoin Daily_Return (y-axis)
+  - Data points: 273 (inner join on Date)
+
+================================================================================
