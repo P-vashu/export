@@ -4,6 +4,17 @@ Analyzing GS, HD, and IBM historical stock prices with volatility patterns,
 risk-adjusted returns, and inter-stock dependencies.
 """
 
+# Install dependencies if running in Jupyter/Colab environment
+import sys
+try:
+    from hmmlearn import hmm
+except ModuleNotFoundError:
+    print("Installing hmmlearn package...")
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "hmmlearn", "--quiet"])
+    from hmmlearn import hmm
+    print("hmmlearn installed successfully!")
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -12,7 +23,6 @@ from scipy import stats
 from scipy.stats import genpareto, norm
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
-from hmmlearn import hmm
 import warnings
 warnings.filterwarnings('ignore')
 
