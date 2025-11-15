@@ -1,0 +1,22 @@
+BAYESIAN LOGISTIC REGRESSION RESULTS (FINAL)
+================================================================================
+
+CONVERGENCE STATUS: CONVERGED
+Maximum R-hat: 1.000000
+
+REQUESTED METRICS:
+Posterior mean odds ratio for star_rating: 464636804084.717
+95% credible interval lower bound for total_votes: -4.8793
+95% credible interval upper bound for total_votes: 4.2130
+Effective sample size for helpful_votes: 1863
+
+================================================================================
+MODEL SUMMARY:
+================================================================================
+                      mean      sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+intercept            4.438   8.123 -10.945   20.192      0.237    0.249    1352.0    1033.0    1.0
+beta_star_rating    26.865  18.331   4.657   63.020      0.635    0.687    1133.0     928.0    1.0
+beta_helpful_votes   0.093   2.192  -3.934    4.269      0.055    0.088    1863.0    1206.0    1.0
+beta_total_votes    -0.120   2.305  -4.456    4.075      0.061    0.090    1789.0    1356.0    1.0
+beta_grocery         0.659   4.685  -7.682   11.027      0.127    0.208    1979.0    1251.0    1.0
+beta_books           0.407   4.320  -8.022    9.266      0.083    0.128    3388.0    2409.0    1.0
