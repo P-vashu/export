@@ -117,7 +117,7 @@ print()
 
 print("MCMC settings:")
 print("  - Iterations: 5000")
-print("  - Burn-in (tune): 1000")
+print("  - Burn-in (tune): 2000")
 print("  - Random seed: 42")
 print()
 
@@ -155,7 +155,7 @@ with pm.Model() as hierarchical_model:
     print("This may take several minutes...")
     trace = pm.sample(
         draws=5000,
-        tune=1000,
+        tune=2000,
         random_seed=42,
         return_inferencedata=True,
         progressbar=True,
