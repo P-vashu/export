@@ -1,0 +1,19 @@
+BAYESIAN LOGISTIC REGRESSION RESULTS
+================================================================================
+
+REQUESTED METRICS:
+Posterior mean odds ratio for star_rating: 895462704665.719
+95% credible interval lower bound for total_votes: -5.0246
+95% credible interval upper bound for total_votes: 4.5365
+Effective sample size for helpful_votes: 615
+
+================================================================================
+MODEL SUMMARY:
+================================================================================
+                      mean      sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+intercept            4.547   8.700 -10.917   22.002      0.478    0.664     428.0     283.0   1.01
+beta_star_rating    27.521  19.663   4.895   64.070      1.266    1.893     390.0     296.0   1.01
+beta_helpful_votes   0.042   2.203  -4.225    4.162      0.099    0.140     615.0     485.0   1.00
+beta_total_votes    -0.144   2.392  -4.984    3.936      0.107    0.155     620.0     435.0   1.01
+beta_grocery         0.174   4.428  -9.094    9.380      0.184    0.228     692.0     478.0   1.00
+beta_books           0.338   4.113  -7.249    9.438      0.180    0.209     662.0     568.0   1.01
