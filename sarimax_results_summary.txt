@@ -1,0 +1,50 @@
+================================================================================
+SARIMAX TIME SERIES MODELING: Ethereum Price Analysis
+================================================================================
+
+MODEL SPECIFICATION:
+  order = (1, 1, 1)
+  seasonal_order = (1, 0, 1, 12)
+  method = 'lbfgs'
+  maxiter = 50
+  enforce_stationarity = True
+  enforce_invertibility = True
+
+================================================================================
+PARAMETER ESTIMATES (Rounded to 4 Decimal Places)
+================================================================================
+
+Exogenous Variable Coefficients:
+  Close_XLM coefficient: 790.5223
+  Close_BTC coefficient: 0.0365
+
+ARIMA Parameters:
+  AR(1) coefficient: -0.8484
+  MA(1) coefficient: 0.7542
+
+Seasonal Parameters:
+  Seasonal AR(12) coefficient: -0.3633
+  Seasonal MA(12) coefficient: 0.3698
+
+Residual Variance:
+  sigma2: 1129.4885
+
+================================================================================
+10-DAY ETHEREUM PRICE FORECAST (USD)
+================================================================================
+
+Mean Close_XLM: 0.1182
+Mean Close_BTC: 9149.3096
+
+  Day 1: $1274.7290
+  Day 2: $1293.1828
+  Day 3: $1277.8714
+  Day 4: $1292.1220
+  Day 5: $1280.8542
+  Day 6: $1291.4056
+  Day 7: $1282.7833
+  Day 8: $1289.5998
+  Day 9: $1284.4789
+  Day 10: $1289.8886
+
+================================================================================
