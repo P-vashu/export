@@ -1,0 +1,22 @@
+================================================================================
+SARIMAX TIME SERIES ANALYSIS: XRP PRICE PREDICTION
+================================================================================
+
+MODEL PARAMETERS
+------------------------------------------------------------
+Close_LTC coefficient:       0.0021
+Close_XEM coefficient:       0.8018
+AR(1) coefficient:           -0.1569
+MA(1) coefficient:           0.2987
+Seasonal AR(12) coefficient: 0.0057
+Seasonal MA(12) coefficient: -0.0921
+Residual variance (sigma2):  0.0014
+
+FORECAST RESULTS
+------------------------------------------------------------
+Highest forecasted value: $0.4986
+
+INSIGHTS
+------------------------------------------------------------
+NEM (XEM) has stronger influence on XRP price movements
+XEM coefficient is 374.81x larger in absolute magnitude
