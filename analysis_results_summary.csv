@@ -1,0 +1,10 @@
+Metric,Value
+STL_MaxTrend_Date,2014-12-31
+Copula_Correlation,0.466
+PCA_PC1_Variance,0.620
+PCA_PC1_PC2_Cumulative,0.812
+PCA_GS_Loading_PC1,0.580
+EVT_GPD_Shape,0.213
+EVT_GPD_Scale,0.009
+HMM_P_State0_to_State1,0.038
+HMM_P_State1_to_State1,0.993
